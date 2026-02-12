@@ -1,1 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/lgbt/ - Fictional 4chan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="is_index board_lgbt yotsuba_b_new">
+    <!-- Desktop board navigation - all links refresh the page -->
+    <div id="boardNavDesktop" class="desktop">
+        <span class="boardList">
+            [<a href="#">a</a> / <a href="#">b</a> / <a href="#">c</a> / <a href="#">d</a> / <a href="#">e</a> / 
+            <a href="#">f</a> / <a href="#">g</a> / <a href="#">gif</a> / <a href="#">h</a> / <a href="#">hr</a> / 
+            <a href="#">k</a> / <a href="#">m</a> / <a href="#">o</a> / <a href="#">p</a> / <a href="#">r</a> / 
+            <a href="#">s</a> / <a href="#">t</a> / <a href="#">u</a> / <a href="#">v</a> / <a href="#">vg</a> / 
+            <a href="#">vm</a> / <a href="#">vmg</a> / <a href="#">vr</a> / <a href="#">vrpg</a> / <a href="#">vst</a> / 
+            <a href="#">w</a> / <a href="#">wg</a>] [<a href="#">i</a> / <a href="#">ic</a>] [<a href="#">r9k</a> / 
+            <a href="#">s4s</a> / <a href="#">vip</a>] [<a href="#">cm</a> / <a href="#">hm</a> / <a href="#">lgbt</a> / 
+            <a href="#">y</a>] [<a href="#">3</a> / <a href="#">aco</a> / <a href="#">adv</a> / <a href="#">an</a> / 
+            <a href="#">bant</a> / <a href="#">biz</a> / <a href="#">cgl</a> / <a href="#">ck</a> / <a href="#">co</a> / 
+            <a href="#">diy</a> / <a href="#">fa</a> / <a href="#">fit</a> / <a href="#">gd</a> / <a href="#">hc</a> / 
+            <a href="#">his</a> / <a href="#">int</a> / <a href="#">jp</a> / <a href="#">lit</a> / <a href="#">mlp</a> / 
+            <a href="#">mu</a> / <a href="#">n</a> / <a href="#">news</a> / <a href="#">out</a> / <a href="#">po</a> / 
+            <a href="#">pol</a> / <a href="#">pw</a> / <a href="#">qst</a> / <a href="#">sci</a> / <a href="#">soc</a> / 
+            <a href="#">sp</a> / <a href="#">tg</a> / <a href="#">toy</a> / <a href="#">trv</a> / <a href="#">tv</a> / 
+            <a href="#">vp</a> / <a href="#">vt</a> / <a href="#">wsg</a> / <a href="#">wsr</a> / <a href="#">x</a> / 
+            <a href="#">xs</a>] <span class="custom-menu-ctrl">[<a data-cmd="custom-menu-edit" title="Edit Menu" href="#">Edit</a>]</span>
+        </span>
+        <span id="navtopright">
+            [<a href="#" id="settingsWindowLink">Settings</a>] [<a href="#" title="Search">Search</a>] 
+            [<a href="#" title="Mobile">Mobile</a>] [<a href="#" target="_top">Home</a>]
+        </span>
+    </div>
 
+    <!-- Board banner with placeholder title -->
+    <div class="boardBanner">
+        <div id="bannerCnt" class="title desktop">
+            <img alt="4chan" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='100'%3E%3Crect width='300' height='100' fill='%23d6daf0'/%3E%3Ctext x='20' y='55' font-size='20' fill='%23000'%3E/lgbt/ - Fictional%3C/text%3E%3C/svg%3E">
+        </div>
+        <div class="boardTitle">/lgbt/ - Lesbian, Gay, Bisexual, &amp; Transgender (Fictional)</div>
+    </div>
+
+    <hr class="abovePostForm">
+
+    <!-- Post form – refresh on "submit" -->
+    <form name="post" action="#" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="MAX_FILE_SIZE" value="4194304">
+        <input type="hidden" name="mode" value="regist">
+        <input id="postPassword" name="pwd" type="hidden">
+        <div id="togglePostFormLink" class="desktop">[<a href="#">Start a New Thread</a>]</div>
+        <table class="postForm" id="postForm">
+            <tbody>
+                <tr data-type="Name">
+                    <td>Name</td>
+                    <td><input name="name" type="text" tabindex="1" placeholder="Anonymous"></td>
+                </tr>
+                <tr data-type="Options">
+                    <td>Options</td>
+                    <td><input name="email" type="text" tabindex="2"></td>
+                </tr>
+                <tr data-type="Subject">
+                    <td>Subject</td>
+                    <td><input name="sub" type="text" tabindex="3"><input type="submit" value="Post" tabindex="10"></td>
+                </tr>
+                <tr data-type="Comment">
+                    <td>Comment</td>
+                    <td><textarea name="com" cols="48" rows="4" wrap="soft" tabindex="4" placeholder="Lorem ipsum..."></textarea></td>
+                </tr>
+                <tr data-type="File">
+                    <td>File</td>
+                    <td><input id="postFile" name="upfile" type="file" tabindex="8"></td>
+                </tr>
+                <tr class="rules">
+                    <td colspan="2">
+                        <ul class="rules">
+                            <li>Please read the <a href="#">Rules</a> and <a href="#">FAQ</a> before posting.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <hr>
+
+    <!-- Threads container -->
+    <div class="board">
+        <!-- ========== THREAD 1 – OP with file, replies, file reply, tripcode, backlinks ========= -->
+        <div class="thread" id="t1">
+            <div class="postContainer opContainer" id="pc1">
+                <div id="p1" class="post op">
+                    <div class="postInfo desktop" id="pi1">
+                        <input type="checkbox" name="1" value="delete">
+                        <span class="subject">/lorem/ - Ipsum General</span>
+                        <span class="nameBlock"><span class="name">Anonymous</span></span>
+                        <span class="dateTime" data-utc="1770790737">02/11/26(Wed)06:18:57</span>
+                        <span class="postNum desktop">
+                            <a href="#" title="Link to this post">No.</a>
+                            <a href="#" title="Reply to this post">100001</a> &nbsp;
+                            <span>[<a href="#" class="replylink">Reply</a>]</span>
+                        </span>
+                        <div id="bl_1" class="backlink">
+                            <span><a href="#" class="quotelink">&gt;&gt;100003</a> <a href="#" class="quotelink">&gt;&gt;100005</a></span>
+                        </div>
+                    </div>
+                    <div class="file" id="f1">
+                        <div class="fileText" id="fT1">File: <a href="#">lorem_ipsum.jpg</a> (123 KB, 690x774)</div>
+                        <a class="fileThumb" href="#">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='222' height='250'%3E%3Crect width='222' height='250' fill='%23cccccc'/%3E%3Ctext x='30' y='135' font-size='16' fill='%23333'%3EIMG%3C/text%3E%3C/svg%3E"
+                                 alt="123 KB" style="height: 250px; width: 222px;" loading="lazy">
+                        </a>
+                    </div>
+                    <blockquote class="postMessage" id="m1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                        QOTT: what's your favorite placeholder text?<br>
+                        prev - <a href="#" class="quotelink">&gt;&gt;999999</a>
+                    </blockquote>
+                </div>
+            </div>
+            <span class="summary desktop">
+                <span class="">5 replies and 1 image omitted. <a href="#" class="replylink">Click here</a> to view.</span>
+            </span>
+
+            <!-- Reply 1: plain reply with quote -->
+            <div class="postContainer replyContainer" id="pc2">
+                <div class="sideArrows">&gt;&gt;</div>
+                <div id="p2" class="post reply">
+                    <div class="postInfo desktop" id="pi2">
+                        <input type="checkbox" name="2" value="delete">
+                        <span class="nameBlock"><span class="name">Anonymous</span></span>
+                        <span class="dateTime" data-utc="1770827517">02/11/26(Wed)11:31:57</span>
+                        <span class="postNum desktop">
+                            <a href="#" title="Link to this post">No.</a>
+                            <a href="#" title="Reply to this post">100002</a>
+                        </span>
+                    </div>
+                    <blockquote class="postMessage" id="m2">
+                        <a href="#" class="quotelink">&gt;&gt;100001</a><br>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- Reply 2: with tripcode -->
+            <div class="postContainer replyContainer" id="pc3">
+                <div class="sideArrows">&gt;&gt;</div>
+                <div id="p3" class="post reply">
+                    <div class="postInfo desktop" id="pi3">
+                        <input type="checkbox" name="3" value="delete">
+                        <span class="nameBlock">
+                            <span class="name">Beanboy</span>
+                            <span class="postertrip">!6k2eHtSMmM</span>
+                        </span>
+                        <span class="dateTime" data-utc="1770821522">02/11/26(Wed)09:52:02</span>
+                        <span class="postNum desktop">
+                            <a href="#" title="Link to this post">No.</a>
+                            <a href="#" title="Reply to this post">100003</a>
+                        </span>
+                    </div>
+                    <blockquote class="postMessage" id="m3">
+                        <a href="#" class="quotelink">&gt;&gt;100001</a><br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- Reply 3: with file upload (GIF) -->
+            <div class="postContainer replyContainer" id="pc4">
+                <div class="sideArrows">&gt;&gt;</div>
+                <div id="p4" class="post reply">
+                    <div class="postInfo desktop" id="pi4">
+                        <input type="checkbox" name="4" value="delete">
+                        <span class="nameBlock"><span class="name">giton</span> <span class="postertrip">!uPj5PAWlKM</span></span>
+                        <span class="dateTime" data-utc="1770827625">02/11/26(Wed)11:33:45</span>
+                        <span class="postNum desktop">
+                            <a href="#" title="Link to this post">No.</a>
+                            <a href="#" title="Reply to this post">100004</a>
+                        </span>
+                    </div>
+                    <div class="file" id="f4">
+                        <div class="fileText" id="fT4">File: <a href="#">chowder_brain.gif</a> (1.48 MB, 480x360)</div>
+                        <a class="fileThumb" href="#">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='125' height='93'%3E%3Crect width='125' height='93' fill='%23cccccc'/%3E%3Ctext x='20' y='55' font-size='14' fill='%23333'%3EGIF%3C/text%3E%3C/svg%3E"
+                                 alt="1.48 MB" style="height: 93px; width: 125px;" loading="lazy">
+                        </a>
+                    </div>
+                    <blockquote class="postMessage" id="m4">
+                        <a href="#" class="quotelink">&gt;&gt;100001</a><br>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- Reply 4: backlink to this post appears in OP -->
+            <div class="postContainer replyContainer" id="pc5">
+                <div class="sideArrows">&gt;&gt;</div>
+                <div id="p5" class="post reply">
+                    <div class="postInfo desktop" id="pi5">
+                        <input type="checkbox" name="5" value="delete">
+                        <span class="nameBlock"><span class="name">Anonymous</span></span>
+                        <span class="dateTime" data-utc="1770827805">02/11/26(Wed)11:36:45</span>
+                        <span class="postNum desktop">
+                            <a href="#" title="Link to this post">No.</a>
+                            <a href="#" title="Reply to this post">100005</a>
+                        </span>
+                    </div>
+                    <blockquote class="postMessage" id="m5">
+                        <a href="#" class="quotelink">&gt;&gt;100001</a><br>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- ========== THREAD 2 – OP with file, reply with deadlink ========= -->
+        <div class="thread" id="t2">
+            <div class="postContainer opContainer" id="pc6">
+                <div id="p6" class="post op">
+                    <div class="postInfo desktop" id="pi6">
+                        <input type="checkbox" name="6" value="delete">
+                        <span class="subject">Interesting Fact Thread</span>
+                        <span class="nameBlock"><span class="name">Anonymous</span></span>
+                        <span class="dateTime" data-utc="1770820948">02/11/26(Wed)09:42:28</span>
+                        <span class="postNum desktop">
+                            <a href="#" title="Link to this post">No.</a>
+                            <a href="#" title="Reply to this post">100006</a> &nbsp;
+                            <span>[<a href="#" class="replylink">Reply</a>]</span>
+                        </span>
+                        <div id="bl_6" class="backlink">
+                            <span><a href="#" class="quotelink">&gt;&gt;100007</a></span>
+                        </div>
+                    </div>
+                    <div class="file" id="f6">
+                        <div class="fileText" id="fT6">File: <a href="#">placeholder_fact.jpg</a> (124 KB, 525x597)</div>
+                        <a class="fileThumb" href="#">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='219' height='250'%3E%3Crect width='219' height='250' fill='%23cccccc'/%3E%3Ctext x='30' y='135' font-size='16' fill='%23333'%3EIMG%3C/text%3E%3C/svg%3E"
+                                 alt="124 KB" style="height: 250px; width: 219px;" loading="lazy">
+                        </a>
+                    </div>
+                    <blockquote class="postMessage" id="m6">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.
+                    </blockquote>
+                </div>
+            </div>
+            <span class="summary desktop">
+                <span class="">1 reply omitted. <a href="#" class="replylink">Click here</a> to view.</span>
+            </span>
+
+            <!-- Reply with deadlink -->
+            <div class="postContainer replyContainer" id="pc7">
+                <div class="sideArrows">&gt;&gt;</div>
+                <div id="p7" class="post reply">
+                    <div class="postInfo desktop" id="pi7">
+                        <input type="checkbox" name="7" value="delete">
+                        <span class="nameBlock"><span class="name">Anonymous</span></span>
+                        <span class="dateTime" data-utc="1770821667">02/11/26(Wed)09:54:27</span>
+                        <span class="postNum desktop">
+                            <a href="#" title="Link to this post">No.</a>
+                            <a href="#" title="Reply to this post">100007</a>
+                        </span>
+                    </div>
+                    <blockquote class="postMessage" id="m7">
+                        <a href="#" class="quotelink">&gt;&gt;100006</a><br>
+                        Et harum quidem rerum facilis est et expedita distinctio.<br>
+                        <span class="deadlink">&gt;&gt;99999999</span> (this link is dead)
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- ========== THREAD 3 – OP with file, reply with quote, backlink ========= -->
+        <div class="thread" id="t3">
+            <div class="postContainer opContainer" id="pc8">
+                <div id="p8" class="post op">
+                    <div class="postInfo desktop" id="pi8">
+                        <input type="checkbox" name="8" value="delete">
+                        <span class="subject">Another Lorem Thread</span>
+                        <span class="nameBlock"><span class="name">Anonymous</span></span>
+                        <span class="dateTime" data-utc="1770827647">02/11/26(Wed)10:34:07</span>
+                        <span class="postNum desktop">
+                            <a href="#" title="Link to this post">No.</a>
+                            <a href="#" title="Reply to this post">100008</a> &nbsp;
+                            <span>[<a href="#" class="replylink">Reply</a>]</span>
+                        </span>
+                    </div>
+                    <div class="file" id="f8">
+                        <div class="fileText" id="fT8">File: <a href="#">dummy.png</a> (50 KB, 224x202)</div>
+                        <a class="fileThumb" href="#">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='202' height='250'%3E%3Crect width='202' height='250' fill='%23cccccc'/%3E%3Ctext x='30' y='135' font-size='16' fill='%23333'%3EPNG%3C/text%3E%3C/svg%3E"
+                                 alt="50 KB" style="height: 250px; width: 202px;" loading="lazy">
+                        </a>
+                    </div>
+                    <blockquote class="postMessage" id="m8">
+                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.
+                    </blockquote>
+                </div>
+            </div>
+            <span class="summary desktop">
+                <span class="">2 replies. <a href="#" class="replylink">Click here</a> to view.</span>
+            </span>
+
+            <!-- Reply quoting OP -->
+            <div class="postContainer replyContainer" id="pc9">
+                <div class="sideArrows">&gt;&gt;</div>
+                <div id="p9" class="post reply">
+                    <div class="postInfo desktop" id="pi9">
+                        <input type="checkbox" name="9" value="delete">
+                        <span class="nameBlock"><span class="name">Anonymous</span></span>
+                        <span class="dateTime" data-utc="1770827798">02/11/26(Wed)11:36:38</span>
+                        <span class="postNum desktop">
+                            <a href="#" title="Link to this post">No.</a>
+                            <a href="#" title="Reply to this post">100009</a>
+                        </span>
+                    </div>
+                    <blockquote class="postMessage" id="m9">
+                        <a href="#" class="quotelink">&gt;&gt;100008</a><br>
+                        Omnis voluptas assumenda est, omnis dolor repellendus.
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div><!-- /.board -->
+
+    <!-- Delete form – refresh on submit -->
+    <form name="delform" id="delform" action="#" method="post">
+        <div class="bottomCtrl desktop">
+            <span class="deleteform">
+                <input type="hidden" name="mode" value="usrdel">
+                Delete Post: [<input type="checkbox" name="onlyimgdel" value="on">File Only]
+                <input type="hidden" id="delPassword" name="pwd">
+                <input type="submit" value="Delete">
+            </span>
+            <span class="stylechanger">
+                Style: <select id="styleSelector">
+                    <option value="Yotsuba New">Yotsuba</option>
+                    <option value="Yotsuba B New">Yotsuba B</option>
+                    <option value="Futaba New">Futaba</option>
+                    <option value="Burichan New">Burichan</option>
+                    <option value="Tomorrow">Tomorrow</option>
+                    <option value="Photon">Photon</option>
+                </select>
+            </span>
+        </div>
+    </form>
+
+    <!-- Pagination – all links refresh -->
+    <div class="pagelist desktop">
+        <div class="prev">[<a title="Toggle infinite scroll" class="depagelink" href="#" data-cmd="depage">All</a>]</div>
+        <div class="pages">
+            [<strong><a href="#">1</a></strong>] [<a href="#">2</a>] [<a href="#">3</a>] [<a href="#">4</a>] [<a href="#">5</a>]
+            [<a href="#">6</a>] [<a href="#">7</a>] [<a href="#">8</a>] [<a href="#">9</a>] [<a href="#">10</a>]
+        </div>
+        <div class="next">
+            <form class="pageSwitcherForm" action="#"><input type="submit" value="Next" accesskey="x"></form>
+        </div>
+        <div class="pages cataloglink"><a href="#">Catalog</a></div>
+        <div class="pages cataloglink"><a href="#">Archive</a></div>
+    </div>
+
+    <!-- Footer navigation -->
+    <div id="boardNavDesktopFoot" class="desktop">
+        <span class="boardList">
+            [<a href="#">a</a> / <a href="#">b</a> / <a href="#">c</a> / <a href="#">d</a> / <a href="#">e</a> / 
+            <a href="#">f</a> / <a href="#">g</a> / <a href="#">gif</a> / <a href="#">h</a> / <a href="#">hr</a> / 
+            <a href="#">k</a> / <a href="#">m</a> / <a href="#">o</a> / <a href="#">p</a> / <a href="#">r</a> / 
+            <a href="#">s</a> / <a href="#">t</a> / <a href="#">u</a> / <a href="#">v</a> / <a href="#">vg</a> / 
+            <a href="#">vm</a> / <a href="#">vmg</a> / <a href="#">vr</a> / <a href="#">vrpg</a> / <a href="#">vst</a> / 
+            <a href="#">w</a> / <a href="#">wg</a>] [<a href="#">i</a> / <a href="#">ic</a>] [<a href="#">r9k</a> / 
+            <a href="#">s4s</a> / <a href="#">vip</a>] [<a href="#">cm</a> / <a href="#">hm</a> / <a href="#">lgbt</a> / 
+            <a href="#">y</a>] [<a href="#">3</a> / <a href="#">aco</a> / <a href="#">adv</a> / <a href="#">an</a> / 
+            <a href="#">bant</a> / <a href="#">biz</a> / <a href="#">cgl</a> / <a href="#">ck</a> / <a href="#">co</a> / 
+            <a href="#">diy</a> / <a href="#">fa</a> / <a href="#">fit</a> / <a href="#">gd</a> / <a href="#">hc</a> / 
+            <a href="#">his</a> / <a href="#">int</a> / <a href="#">jp</a> / <a href="#">lit</a> / <a href="#">mlp</a> / 
+            <a href="#">mu</a> / <a href="#">n</a> / <a href="#">news</a> / <a href="#">out</a> / <a href="#">po</a> / 
+            <a href="#">pol</a> / <a href="#">pw</a> / <a href="#">qst</a> / <a href="#">sci</a> / <a href="#">soc</a> / 
+            <a href="#">sp</a> / <a href="#">tg</a> / <a href="#">toy</a> / <a href="#">trv</a> / <a href="#">tv</a> / 
+            <a href="#">vp</a> / <a href="#">vt</a> / <a href="#">wsg</a> / <a href="#">wsr</a> / <a href="#">x</a> / 
+            <a href="#">xs</a>] <span class="custom-menu-ctrl">[<a data-cmd="custom-menu-edit" title="Edit Menu" href="#">Edit</a>]</span>
+        </span>
+        <span id="navbotright">
+            [<a href="#" id="settingsWindowLinkBot">Settings</a>] [<a href="#" title="Search">Search</a>] 
+            [<a href="#" title="Mobile">Mobile</a>] [<a href="#" target="_top">Home</a>]
+        </span>
+    </div>
+
+    <div id="absbot" class="absBotText">
+        <span class="absBotDisclaimer">All trademarks and copyrights on this page are owned by their respective parties. 
+        Images uploaded are the responsibility of the Poster. Comments are owned by the Poster.</span>
+        <div id="footer-links">
+            <a href="#">About</a> • <a href="#">Feedback</a> • <a href="#">Legal</a> • <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
